@@ -9,7 +9,6 @@ load_dotenv()
 # Read the API key
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY") or st.secrets.get("GOOGLE_API_KEY")
 
-
 # Configure Gemini API
 genai.configure(api_key=GOOGLE_API_KEY)
 
