@@ -1,9 +1,20 @@
 import os
 import streamlit as st
 import google.generativeai as genai
+from dotenv import load_dotenv
 
-GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+# Load environment variables (for local dev)
+load_dotenv()
+
+# Read the API key
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY") or st.secrets.get("GOOGLE_API_KEY")
+
+
+# Configure Gemini API
 genai.configure(api_key=GOOGLE_API_KEY)
+
+# Initialize the model
+model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
 # Streamlit App
 st.title("🔍 AI Code Explainer")

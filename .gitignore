@@ -1,6 +1,9 @@
 # Ignore Python virtual environment
 .venv/
 
+# Ignore environment variables
+.env
+
 # Ignore OS files
 .DS_Store
 Thumbs.db
