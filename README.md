@@ -1,53 +1,85 @@
-# 🔍 AI Code Explainer
+🔍 AI Code Explainer using Gemini API
+This Streamlit web application allows users to paste code snippets and receive a simplified explanation of the code using Google's Gemini 1.5 Pro model.
 
-An AI-powered web app that explains code snippets in **simple, human-friendly language** using **Google Gemini Pro** and **Streamlit**.
+🚀 Features
+Paste any code snippet in the input area
 
----
+Get an easy-to-understand explanation powered by Gemini AI
 
-## 🧠 Project Overview
+Clean and user-friendly Streamlit interface
 
-AI Code Explainer is designed to **help developers, students, and educators** understand code quickly and easily. Whether you're learning to program or just want to understand a snippet you found online, this app can simplify even the most complex logic using natural language.
+🧠 Powered By
+Google Gemini 1.5 Pro
 
-You paste any code, press a button, and the app provides an easy-to-understand explanation using the **Gemini 1.5 Pro model** by Google.
+Streamlit
 
----
+Python
 
-## 🎯 Key Features
+📦 Installation
+Clone this repository
 
-- 🔤 Accepts multiple programming languages (Python, JavaScript, HTML, etc.)
-- 🧠 Explains code in simple terms using **Gemini 1.5 Pro**
-- 🖥️ Built with an intuitive and responsive UI using **Streamlit**
-- 🌐 Works locally or in the cloud (Streamlit Community Cloud)
-- 🔐 Uses secure API key management via `.env` or Streamlit secrets
+bash
+Copy
+Edit
+git clone https://github.com/your-username/ai-code-explainer.git
+cd ai-code-explainer
+Create and activate a virtual environment (optional)
 
----
+bash
+Copy
+Edit
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+Install dependencies
 
-## 🛠️ Tech Stack
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Set up your Google API Key
 
-| Technology        | Purpose                                |
-|-------------------|-----------------------------------------|
-| Python            | Core programming language               |
-| Streamlit         | Web framework for building UI           |
-| google-generativeai | To connect and use Gemini Pro API     |
-| python-dotenv     | Load environment variables securely     |
+Create a .env file in the root of your project and add:
 
----
+ini
+Copy
+Edit
+GOOGLE_API_KEY=your_google_api_key_here
+Alternatively, use Streamlit secrets in secrets.toml:
 
-## 📷 Screenshot
+toml
+Copy
+Edit
+[default]
+GOOGLE_API_KEY = "your_google_api_key_here"
+▶️ Run the App
+bash
+Copy
+Edit
+streamlit run app.py
+Open the browser and go to http://localhost:8501 to use the app.
 
-![screenshot](r"C:\Users\Abinesh.R\Documents\Pictures\code_explainer.png")  
+🖼️ Screenshot
 
----
+📁 File Structure
+bash
+Copy
+Edit
+.
+├── app.py             # Main Streamlit app
+├── .env               # Environment file for API key
+├── requirements.txt   # Python dependencies
+└── README.md          # Project documentation
+✅ Example Use Cases
+Understanding complex Python scripts
 
-## 📁 Project Structure
-ai-code-explainer/
-│
-├── .env                         # Environment file to store API key locally (DO NOT COMMIT)
-├── .gitignore                   # Specifies intentionally untracked files to ignore
-├── app.py                       # Main Streamlit application file
-├── requirements.txt             # List of required Python packages
-├── README.md                    # Project documentation
-└── assets/
-    └── code_explainer.png       # Screenshot or related image for README
+Learning how a code snippet works
 
+Debugging and documentation
+
+🛡️ License
+MIT License - feel free to use and modify it!
+
+🙋‍♂️ Author
+Your Name
+GitHub | LinkedIn
 
