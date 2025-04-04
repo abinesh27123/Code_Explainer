@@ -40,5 +40,14 @@ You paste any code, press a button, and the app provides an easy-to-understand e
 ---
 
 ## 📁 Project Structure
-ai-code-explainer/ ├── app.py # Main Streamlit application ├── .env # API key (optional for local development) ├── README.md # Project documentation ├── requirements.txt # Python dependencies ├── assets/ │ └── code_explainer.png # Screenshot image (for README) └── .streamlit/ └── secrets.toml # (Optional) API key for Streamlit Cloud
+ai-code-explainer/
+│
+├── .env                         # Environment file to store API key locally (DO NOT COMMIT)
+├── .gitignore                   # Specifies intentionally untracked files to ignore
+├── app.py                       # Main Streamlit application file
+├── requirements.txt             # List of required Python packages
+├── README.md                    # Project documentation
+└── assets/
+    └── code_explainer.png       # Screenshot or related image for README
+
 
