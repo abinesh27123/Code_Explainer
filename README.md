@@ -35,7 +35,7 @@ You paste any code, press a button, and the app provides an easy-to-understand e
 
 ## 📷 Screenshot
 
-![screenshot](https://your-screenshot-url)  
+![screenshot]("C:\Users\Abinesh.R\Documents\Pictures\code_explainer.png")  
 *Screenshot of the app interface (replace with actual URL if needed)*
 
 ---
