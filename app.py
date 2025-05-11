@@ -3,7 +3,7 @@ import streamlit as st
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-# Load environment variables
+# Load environment variables (for local dev)
 load_dotenv()
 
 # Read the API key
@@ -22,8 +22,8 @@ code_input = st.text_area("Paste your code here:", height=300)
 # Generate Explanation
 if st.button("🤖 Explain Code") and code_input:
     try:
-        # Use the Gemini model
-        model = genai.GenerativeModel("gemini-1.5-pro-latest")
+        # Use the latest Gemini model
+        model = genai.GenerativeModel("gemini-1.5-flash-latest")
 
         # Generate Explanation
         response = model.generate_content(f"Explain the following code in simple terms:\n{code_input}")
